@@ -524,7 +524,7 @@ p {
     transform: scale(0.95);
   }
 }
-
+/* Dark mode hero carousel adjustments */
 /* Dark mode hero carousel adjustments */
 [data-theme="dark"] .hero-bg-image:nth-child(1) {
   background-image: linear-gradient(rgba(11, 18, 32, 0.7), rgba(11, 18, 32, 0.7)), 
