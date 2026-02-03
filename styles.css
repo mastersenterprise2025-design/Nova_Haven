@@ -465,6 +465,12 @@ p {
   width: 100%;
   height: 100%;
   z-index: 1;
+  transition: filter 0.6s ease;
+}
+
+.hero-carousel.blurred {
+  filter: blur(15px);
+  transform: scale(1.1);
 }
 
 /* Hero Background Images */
@@ -524,7 +530,7 @@ p {
     transform: scale(0.95);
   }
 }
-/* Dark mode hero carousel adjustments */
+
 /* Dark mode hero carousel adjustments */
 [data-theme="dark"] .hero-bg-image:nth-child(1) {
   background-image: linear-gradient(rgba(11, 18, 32, 0.7), rgba(11, 18, 32, 0.7)), 
@@ -557,6 +563,13 @@ p {
   max-width: 800px;
   position: relative;
   z-index: 1000;
+  transition: filter 0.6s ease, transform 0.6s ease;
+}
+
+.hero-content.blurred {
+  filter: blur(8px);
+  transform: scale(0.95);
+  opacity: 0.3;
 }
 
 .hero-title {
@@ -661,7 +674,7 @@ p {
   gap: var(--space-lg);
   margin-top: var(--space-3xl);
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 
 /* Amenity Cards - Optimized */
@@ -758,11 +771,11 @@ p {
 /* Features Grid */
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--space-xl);
   margin-top: var(--space-3xl);
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 
 /* Feature Cards - Optimized */
@@ -882,7 +895,7 @@ p {
   margin-top: var(--space-3xl);
   align-items: center;
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 
 /* Location Details - Optimized */
@@ -1077,7 +1090,7 @@ p {
   gap: var(--space-2xl);
   margin-top: var(--space-3xl);
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 
 /* Testimonial Cards - Optimized */
@@ -1225,7 +1238,7 @@ p {
   gap: var(--space-2xl);
   margin-top: var(--space-3xl);
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 
 /* Project Cards - Optimized */

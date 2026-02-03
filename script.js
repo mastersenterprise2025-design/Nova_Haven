@@ -200,6 +200,42 @@ if (document.readyState === 'loading') {
   initializeAnimations();
 }
 
+// Hero Blur Effect on Scroll
+function initializeHeroBlurEffect() {
+  const heroCarousel = document.querySelector('.hero-carousel');
+  const heroContent = document.querySelector('.hero-content');
+  const projectsSection = document.getElementById('projects');
+  
+  if (!heroCarousel || !heroContent || !projectsSection) return;
+  
+  const observerOptions = {
+    root: null,
+    rootMargin: '-20% 0px -60% 0px',
+    threshold: 0
+  };
+  
+  const blurObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        heroCarousel.classList.add('blurred');
+        heroContent.classList.add('blurred');
+      } else {
+        heroCarousel.classList.remove('blurred');
+        heroContent.classList.remove('blurred');
+      }
+    });
+  }, observerOptions);
+  
+  blurObserver.observe(projectsSection);
+}
+
+// Initialize hero blur effect
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initializeHeroBlurEffect);
+} else {
+  initializeHeroBlurEffect();
+}
+
 // Handle CTA form submission
 const ctaForm = document.querySelector('.cta-form');
 if (ctaForm) {
