@@ -592,6 +592,7 @@ p {
     animation: none !important;
 }
 
+
 .hero-actions {
   display: flex;
   gap: var(--space-lg);
