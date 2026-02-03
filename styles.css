@@ -661,7 +661,7 @@ p {
   gap: var(--space-lg);
   margin-top: var(--space-3xl);
   position: relative;
-  z-index: 3;
+  z-index: 1;
 }
 
 /* Amenity Cards - Optimized */
@@ -758,11 +758,11 @@ p {
 /* Features Grid */
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-xl);
   margin-top: var(--space-3xl);
   position: relative;
-  z-index: 3;
+  z-index: 1;
 }
 
 /* Feature Cards - Optimized */
@@ -882,7 +882,7 @@ p {
   margin-top: var(--space-3xl);
   align-items: center;
   position: relative;
-  z-index: 3;
+  z-index: 1;
 }
 
 /* Location Details - Optimized */
@@ -1077,7 +1077,7 @@ p {
   gap: var(--space-2xl);
   margin-top: var(--space-3xl);
   position: relative;
-  z-index: 3;
+  z-index: 1;
 }
 
 /* Testimonial Cards - Optimized */
@@ -1225,7 +1225,7 @@ p {
   gap: var(--space-2xl);
   margin-top: var(--space-3xl);
   position: relative;
-  z-index: 3;
+  z-index: 1;
 }
 
 /* Project Cards - Optimized */
